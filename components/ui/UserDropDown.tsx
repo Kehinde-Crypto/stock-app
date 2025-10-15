@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Button } from "./button";
-import { Avatar, AvatarFallback } from "./avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
 import { useRouter } from 'next/navigation';
 import { LogOut } from "lucide-react";
 import NavItems from "./NavItems";
@@ -31,7 +31,6 @@ const UserDropDown = () => {
     </div>
     </Button></DropdownMenuTrigger>
   <DropdownMenuContent className="text-gray-400">
-    </div>
     <DropdownMenuLabel>
       <div className="flex relative items-center gap-3 py-2">
       <Avatar className="h-10 w-10">
@@ -43,6 +42,7 @@ const UserDropDown = () => {
        <div className="flex flex-col">
       <span className="text-base font-medium text-gray-400">{user.name}</span>
       <span className="text-sm text-gray-500"></span>
+    </div>
     </div>
     </DropdownMenuLabel>
   <DropdownMenuSeparator className="bg-gray-600"/>
