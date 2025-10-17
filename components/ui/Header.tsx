@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import NavItems from '../ui/NavItems';
 import UserDropDown from './UserDropDown';
-const Header = () => {
+const Header = ({user}:{user:User}) => {
   return (
     <header className='sticky top-0 header'>
       <div className="flex items-center justify-between">
@@ -12,7 +12,7 @@ const Header = () => {
         </Link>
         <nav className='hidden sm:block'>
           <NavItems/>
-          <UserDropDown/>
+          <UserDropDown user={user}/>
         </nav>
       </div>
     </header>
